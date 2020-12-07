@@ -41,16 +41,6 @@ class ConfigurationTest extends ProjectTestCase
         $this->assertNull($this->object->getServiceName());
     }
 
-    // isParallel()
-
-    /**
-     * @test
-     */
-    public function shouldHaveFalseParallelOnConstruction()
-    {
-        $this->assertFalse($this->object->isParallel());
-    }
-
     // getCloverXmlPaths()
 
     /**
@@ -230,19 +220,6 @@ class ConfigurationTest extends ProjectTestCase
 
         $this->assertSame($same, $this->object);
         $this->assertSame($expected, $this->object->getServiceName());
-    }
-
-    // setParallel()
-
-    /**
-     * @test
-     */
-    public function shouldSetParallel()
-    {
-        $same = $this->object->setParallel(true);
-
-        $this->assertSame($same, $this->object);
-        $this->assertTrue($this->object->isParallel());
     }
 
     // setCloverXmlPaths()

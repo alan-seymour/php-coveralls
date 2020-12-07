@@ -153,30 +153,6 @@ class Configuration
     }
 
     /**
-     * Set parallel.
-     *
-     * @param bool $parallel
-     *
-     * @return $this
-     */
-    public function setParallel($parallel)
-    {
-        $this->parallel = $parallel;
-
-        return $this;
-    }
-
-    /**
-     * Return whether the build is being submitted as parallel or not.
-     *
-     * @return bool
-     */
-    public function isParallel()
-    {
-        return $this->parallel === true;
-    }
-
-    /**
      * Set service name.
      *
      * @param string $serviceName
